@@ -1,0 +1,497 @@
+    <main class="workspace">
+        <aside class="sidebar-left">
+            <div class="panel-header">Assets</div>
+            <div class="assets-list" id="assets-list">
+                <div class="upload-zone" id="upload-zone">
+                    <i class="ph ph-upload-simple"></i>
+                    <p>Click or Drag files</p>
+                    <input type="file" id="file-input" multiple accept="video/*,audio/*" hidden>
+                </div>
+                <!-- Asset items will be injected here -->
+            </div>
+        </aside>
+
+        <section class="player-container">
+            <div class="player-wrapper">
+                <video id="main-player" controls></video>
+            </div>
+            <div class="player-controls">
+                <button id="play-pause"><i class="ph ph-play"></i></button>
+                <span id="time-display">00:00 / 00:00</span>
+            </div>
+        </section>
+
+        <aside class="sidebar-right">
+            <div class="panel-header">Properties</div>
+            <div class="properties-panel" id="properties-panel">
+                <p class="empty-state">Select a clip to edit properties</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="timeline-container">
+        <div class="timeline-header">
+            <div class="timeline-tools">
+                <button id="tool-split" title="Split (B)"><i class="ph ph-scissors"></i></button>
+                <button id="tool-delete" title="Delete (Del)"><i class="ph ph-trash"></i></button>
+            </div>
+            <div class="zoom-controls">
+                <button id="zoom-out"><i class="ph ph-minus"></i></button>
+                <input type="range" id="zoom-level" min="1" max="10" value="1">
+                <button id="zoom-in"><i class="ph ph-plus"></i></button>
+            </div>
+        </div>
+        <div class="timeline-tracks" id="timeline-tracks">
+            <!-- Tracks will be rendered here -->
+            <div class="time-ruler" id="time-ruler"></div>
+            <div class="playhead" id="playhead"></div>
+            <div class="track video-track" data-type="video">
+                <div class="track-label">Video 1</div>
+                <div class="track-content"></div>
+            </div>
+            <div class="track audio-track" data-type="audio">
+                <div class="track-label">Audio 1</div>
+                <div class="track-content"></div>
+                <!DOCTYPE html>
+                <html lang="en">
+
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Web Video Editor</title>
+                    <link rel="stylesheet" href="assets/css/style.css">
+                    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+                        rel="stylesheet">
+                    <!-- Phosphor Icons for UI elements -->
+                    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+                </head>
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <i class="ph ph-film-strip"></i>
+                <span>Antigravity Editor</span>
+            </div>
+            <div class="project-title">Untitled Project</div>
+            <div class="actions">
+                <button id="save-btn" class="btn btn-secondary">Save</button>
+                <button id="export-btn" class="btn btn-primary">Export</button>
+            </div>
+        </header>
+
+        <main class="workspace">
+            <aside class="sidebar-left">
+                <div class="panel-header">Assets</div>
+                <div class="assets-list" id="assets-list">
+                    <div class="upload-zone" id="upload-zone">
+                        <i class="ph ph-upload-simple"></i>
+                        <p>Click or Drag files</p>
+                        <input type="file" id="file-input" multiple accept="video/*,audio/*" hidden>
+                    </div>
+                    <!-- Asset items will be injected here -->
+                </div>
+            </aside>
+
+            <section class="player-container">
+                <div class="player-wrapper">
+                    <video id="main-player" controls></video>
+                </div>
+                <div class="player-controls">
+                    <button id="play-pause"><i class="ph ph-play"></i></button>
+                    <span id="time-display">00:00 / 00:00</span>
+                </div>
+            </section>
+
+            <aside class="sidebar-right">
+                <div class="panel-header">Properties</div>
+                <div class="properties-panel" id="properties-panel">
+                    <p class="empty-state">Select a clip to edit properties</p>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="timeline-container">
+            <div class="timeline-header">
+                <div class="timeline-tools">
+                    <button id="tool-split" title="Split (B)"><i class="ph ph-scissors"></i></button>
+                    <button id="tool-delete" title="Delete (Del)"><i class="ph ph-trash"></i></button>
+                </div>
+                <div class="zoom-controls">
+                    <button id="zoom-out"><i class="ph ph-minus"></i></button>
+                    <input type="range" id="zoom-level" min="1" max="10" value="1">
+                    <button id="zoom-in"><i class="ph ph-plus"></i></button>
+                </div>
+            </div>
+            <div class="timeline-tracks" id="timeline-tracks">
+                <!-- Tracks will be rendered here -->
+                <div class="time-ruler" id="time-ruler"></div>
+                <div class="playhead" id="playhead"></div>
+                <div class="track video-track" data-type="video">
+                    <div class="track-label">Video 1</div>
+                    <div class="track-content"></div>
+                </div>
+                <div class="track audio-track" data-type="audio">
+                    <div class="track-label">Audio 1</div>
+                    ```html
+                    <!DOCTYPE html>
+                    <html lang="en">
+
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Web Video Editor</title>
+                        <link rel="stylesheet" href="assets/css/style.css">
+                        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+                            rel="stylesheet">
+                        <!-- Phosphor Icons for UI elements -->
+                        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+                    </head>
+
+                    <body>
+                        <div class="app-container">
+                            <header class="app-header">
+                                <div class="logo">
+                                    <i class="ph ph-film-strip"></i>
+                                    <span>Antigravity Editor</span>
+                                </div>
+                                <div class="project-title">Untitled Project</div>
+                                <div class="actions">
+                                    <button id="save-btn" class="btn btn-secondary">Save</button>
+                                    <button id="export-btn" class="btn btn-primary">Export</button>
+                                </div>
+                            </header>
+
+                            <main class="workspace">
+                                <aside class="sidebar-left">
+                                    <div class="panel-header">Assets</div>
+                                    <div class="assets-list" id="assets-list">
+                                        <div class="upload-zone" id="upload-zone">
+                                            <i class="ph ph-upload-simple"></i>
+                                            <p>Click or Drag files</p>
+                                            <input type="file" id="file-input" multiple accept="video/*,audio/*" hidden>
+                                        </div>
+                                        <!-- Asset items will be injected here -->
+                                    </div>
+                                </aside>
+
+                                <section class="player-container">
+                                    <div class="player-wrapper">
+                                        <video id="main-player" controls></video>
+                                    </div>
+                                    <div class="player-controls">
+                                        <button id="play-pause"><i class="ph ph-play"></i></button>
+                                        <span id="time-display">00:00 / 00:00</span>
+                                    </div>
+                                </section>
+
+                                <aside class="sidebar-right">
+                                    <div class="panel-header">Properties</div>
+                                    <div class="properties-panel" id="properties-panel">
+                                        <p class="empty-state">Select a clip to edit properties</p>
+                                    </div>
+                                </aside>
+                            </main>
+
+                            <footer class="timeline-container">
+                                <div class="timeline-header">
+                                    <div class="timeline-tools">
+                                        <button id="tool-split" title="Split (B)"><i
+                                                class="ph ph-scissors"></i></button>
+                                        <button id="tool-delete" title="Delete (Del)"><i
+                                                class="ph ph-trash"></i></button>
+                                    </div>
+                                    <div class="zoom-controls">
+                                        <button id="zoom-out"><i class="ph ph-minus"></i></button>
+                                        <input type="range" id="zoom-level" min="1" max="10" value="1">
+                                        <button id="zoom-in"><i class="ph ph-plus"></i></button>
+                                    </div>
+                                </div>
+                                <div class="timeline-tracks" id="timeline-tracks">
+                                    <!-- Tracks will be rendered here -->
+                                    <div class="time-ruler" id="time-ruler"></div>
+                                    <div class="playhead" id="playhead"></div>
+                                    <div class="track video-track" data-type="video">
+                                        <div class="track-label">Video 1</div>
+                                        <div class="track-content"></div>
+                                    </div>
+                                    <div class="track audio-track" data-type="audio">
+                                        <div class="track-label">Audio 1</div>
+                                        <div class="track-content"></div>
+                                    </div>
+                                    <footer class="timeline-container">
+                                        <div class="timeline-header">
+                                            <div class="timeline-tools">
+                                                <button id="tool-split" title="Split (B)"><i
+                                                        class="ph ph-scissors"></i></button>
+                                                <button id="tool-delete" title="Delete (Del)"><i
+                                                        class="ph ph-trash"></i></button>
+                                            </div>
+                                            <div class="zoom-controls">
+                                                <button id="zoom-out"><i class="ph ph-minus"></i></button>
+                                                <input type="range" id="zoom-level" min="1" max="10" value="1">
+                                                <button id="zoom-in"><i class="ph ph-plus"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-tracks" id="timeline-tracks">
+                                            <!-- Tracks will be rendered here -->
+                                            <div class="time-ruler" id="time-ruler"></div>
+                                            <div class="playhead" id="playhead"></div>
+                                            <div class="track video-track" data-type="video">
+                                                <div class="track-label">Video 1</div>
+                                                <div class="track-content"></div>
+                                            </div>
+                                            <div class="track audio-track" data-type="audio">
+                                                <div class="track-label">Audio 1</div>
+                                                <div class="track-content"></div>
+                                                <!DOCTYPE html>
+                                                <html lang="en">
+
+                                                <head>
+                                                    <meta charset="UTF-8">
+                                                    <meta name="viewport"
+                                                        content="width=device-width, initial-scale=1.0">
+                                                    <title>Web Video Editor</title>
+                                                    <link rel="stylesheet" href="assets/css/style.css">
+                                                    <link
+                                                        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+                                                        rel="stylesheet">
+                                                    <!-- Phosphor Icons for UI elements -->
+                                                    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+                                                </head>
+
+                                                <body>
+                                                    <div class="app-container">
+                                                        <header class="app-header">
+                                                            <div class="logo">
+                                                                <i class="ph ph-film-strip"></i>
+                                                                <span>Antigravity Editor</span>
+                                                            </div>
+                                                            <div class="project-title">Untitled
+                                                                Project</div>
+                                                            <div class="actions">
+                                                                <button id="save-btn"
+                                                                    class="btn btn-secondary">Save</button>
+                                                                <button id="export-btn"
+                                                                    class="btn btn-primary">Export</button>
+                                                            </div>
+                                                        </header>
+
+                                                        <main class="workspace">
+                                                            <aside class="sidebar-left">
+                                                                <div class="panel-header">Assets
+                                                                </div>
+                                                                <div class="assets-list" id="assets-list">
+                                                                    <div class="upload-zone" id="upload-zone">
+                                                                        <i class="ph ph-upload-simple"></i>
+                                                                        <p>Click or Drag files</p>
+                                                                        <input type="file" id="file-input" multiple
+                                                                            accept="video/*,audio/*" hidden>
+                                                                    </div>
+                                                                    <!-- Asset items will be injected here -->
+                                                                </div>
+                                                            </aside>
+
+                                                            <section class="player-container">
+                                                                <div class="player-wrapper">
+                                                                    <video id="main-player" controls></video>
+                                                                </div>
+                                                                <div class="player-controls">
+                                                                    <button id="play-pause"><i
+                                                                            class="ph ph-play"></i></button>
+                                                                    <span id="time-display">00:00 /
+                                                                        00:00</span>
+                                                                </div>
+                                                            </section>
+
+                                                            <aside class="sidebar-right">
+                                                                <div class="panel-header">Properties
+                                                                </div>
+                                                                <div class="properties-panel" id="properties-panel">
+                                                                    <p class="empty-state">Select a
+                                                                        clip to edit properties</p>
+                                                                </div>
+                                                            </aside>
+                                                        </main>
+
+                                                        <footer class="timeline-container">
+                                                            <div class="timeline-header">
+                                                                <div class="timeline-tools">
+                                                                    <button id="tool-split" title="Split (B)"><i
+                                                                            class="ph ph-scissors"></i></button>
+                                                                    <button id="tool-delete" title="Delete (Del)"><i
+                                                                            class="ph ph-trash"></i></button>
+                                                                </div>
+                                                                <div class="zoom-controls">
+                                                                    <button id="zoom-out"><i
+                                                                            class="ph ph-minus"></i></button>
+                                                                    <input type="range" id="zoom-level" min="1" max="10"
+                                                                        value="1">
+                                                                    <button id="zoom-in"><i
+                                                                            class="ph ph-plus"></i></button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="timeline-tracks" id="timeline-tracks">
+                                                                <!-- Tracks will be rendered here -->
+                                                                <div class="time-ruler" id="time-ruler"></div>
+                                                                <div class="playhead" id="playhead">
+                                                                </div>
+                                                                <div class="track video-track" data-type="video">
+                                                                    <div class="track-label">Video 1
+                                                                    </div>
+                                                                    <div class="track-content">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="track audio-track" data-type="audio">
+                                                                    <div class="track-label">Audio 1
+                                                                    </div>
+                                                                    ```html
+                                                                    <!DOCTYPE html>
+                                                                    <html lang="en">
+
+                                                                    <head>
+                                                                        <meta charset="UTF-8">
+                                                                        <meta name="viewport"
+                                                                            content="width=device-width, initial-scale=1.0">
+                                                                        <title>Web Video Editor
+                                                                        </title>
+                                                                        <link rel="stylesheet"
+                                                                            href="assets/css/style.css">
+                                                                        <link
+                                                                            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+                                                                            rel="stylesheet">
+                                                                        <!-- Phosphor Icons for UI elements -->
+                                                                        <script
+                                                                            src="https://unpkg.com/@phosphor-icons/web"></script>
+                                                                    </head>
+
+                                                                    <body>
+                                                                        <div class="app-container">
+                                                                            <header class="app-header">
+                                                                                <div class="logo">
+                                                                                    <i class="ph ph-film-strip"></i>
+                                                                                    <span>Antigravity
+                                                                                        Editor</span>
+                                                                                </div>
+                                                                                <div class="project-title">
+                                                                                    Untitled Project
+                                                                                </div>
+                                                                                <div class="actions">
+                                                                                    <button id="save-btn"
+                                                                                        class="btn btn-secondary">Save</button>
+                                                                                    <button id="export-btn"
+                                                                                        class="btn btn-primary">Export</button>
+                                                                                </div>
+                                                                            </header>
+
+                                                                            <main class="workspace">
+                                                                                <aside class="sidebar-left">
+                                                                                    <div class="panel-header">
+                                                                                        Assets</div>
+                                                                                    <div class="assets-list"
+                                                                                        id="assets-list">
+                                                                                        <div class="upload-zone"
+                                                                                            id="upload-zone">
+                                                                                            <i
+                                                                                                class="ph ph-upload-simple"></i>
+                                                                                            <p>Click
+                                                                                                or
+                                                                                                Drag
+                                                                                                files
+                                                                                            </p>
+                                                                                            <input type="file"
+                                                                                                id="file-input" multiple
+                                                                                                accept="video/*,audio/*"
+                                                                                                hidden>
+                                                                                        </div>
+                                                                                        <!-- Asset items will be injected here -->
+                                                                                    </div>
+                                                                                </aside>
+
+                                                                                <section class="player-container">
+                                                                                    <div class="player-wrapper">
+                                                                                        <video id="main-player"
+                                                                                            controls></video>
+                                                                                    </div>
+                                                                                    <div class="player-controls">
+                                                                                        <button id="play-pause"><i
+                                                                                                class="ph ph-play"></i></button>
+                                                                                        <span id="time-display">00:00
+                                                                                            /
+                                                                                            00:00</span>
+                                                                                    </div>
+                                                                                </section>
+
+                                                                                <aside class="sidebar-right">
+                                                                                    <div class="panel-header">
+                                                                                        Properties
+                                                                                    </div>
+                                                                                    <div class="properties-panel"
+                                                                                        id="properties-panel">
+                                                                                        <p class="empty-state">
+                                                                                            Select a
+                                                                                            clip to
+                                                                                            edit
+                                                                                            properties
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </aside>
+                                                                            </main>
+
+                                                                            <footer class="timeline-container">
+                                                                                <div class="timeline-header">
+                                                                                    <div class="timeline-tools">
+                                                                                        <button id="tool-split"
+                                                                                            title="Split (B)"><i
+                                                                                                class="ph ph-scissors"></i></button>
+                                                                                        <button id="tool-delete"
+                                                                                            title="Delete (Del)"><i
+                                                                                                class="ph ph-trash"></i></button>
+                                                                                    </div>
+                                                                                    <div class="zoom-controls">
+                                                                                        <button id="zoom-out"><i
+                                                                                                class="ph ph-minus"></i></button>
+                                                                                        <input type="range"
+                                                                                            id="zoom-level" min="1"
+                                                                                            max="10" value="1">
+                                                                                        <button id="zoom-in"><i
+                                                                                                class="ph ph-plus"></i></button>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="timeline-tracks"
+                                                                                    id="timeline-tracks">
+                                                                                    <!-- Tracks will be rendered here -->
+                                                                                    <div class="time-ruler"
+                                                                                        id="time-ruler">
+                                                                                    </div>
+                                                                                    <div class="playhead" id="playhead">
+                                                                                    </div>
+                                                                                    <div class="track video-track"
+                                                                                        data-type="video">
+                                                                                        <div class="track-label">
+                                                                                            Video 1
+                                                                                        </div>
+                                                                                        <div class="track-content">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="track audio-track"
+                                                                                        data-type="audio">
+                                                                                        <div class="track-label">
+                                                                                            Audio 1
+                                                                                        </div>
+                                                                                        <div class="track-content">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </footer>
+                                                                        </div>
+
+                                                                        <!-- Scripts -->
+                                                                        <script src="assets/js/VisualGenerator.js?v=4"
+                                                                            type="module"></script>
+                                                                        <script src="assets/js/main.js?v=4"
+                                                                            type="module"></script>
+                                                                    </body>
+
+                                                                    </html>
+                                                                    ```
